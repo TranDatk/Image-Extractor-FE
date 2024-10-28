@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply text-[13px] font-sans m-0 p-0;
+    }
+
+    svg {
+        @apply align-top;
+    }
+}
+
+@layer components {
+    .btn-success {
+        @apply text-white bg-[#00b894] opacity-70 rounded-md;
+    }
+
+    .btn-success:hover {
+        @apply opacity-100 transition ease-in-out duration-500;
+    }
+
+    .btn-primary {
+        @apply text-white bg-[#0984e3] opacity-70 rounded-md;
+    }
+
+    .btn-primary:hover {
+        @apply opacity-100 transition ease-in-out duration-500;
+    }
+
+    .btn-secondary {
+        @apply text-white bg-[#2d3436] opacity-70 rounded-md;
+    }
+
+    .btn-secondary:hover {
+        @apply opacity-100 transition ease-in-out duration-500;
+    }
+
+    .btn-danger {
+        @apply text-white bg-[#d63031] opacity-70 rounded-md;
+    }
+
+    .btn-danger:hover {
+        @apply bg-[#d63031] opacity-100 transition ease-in-out duration-500;
+    }
+
+    .btn-warning {
+        @apply text-white bg-[#fdcb6e] opacity-70 rounded-md;
+    }
+
+    .btn-warning:hover {
+        @apply bg-[#fdcb6e] opacity-100 transition ease-in-out duration-500;
+    }
+
+    .btn-violet {
+        @apply text-white bg-[#6c5ce7] opacity-70 rounded-md;
+    }
+}
+
+@layer utilities {
+    .card-body {
+        @apply text-[13px];
+    }
+}
