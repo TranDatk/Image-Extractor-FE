@@ -1,0 +1,37 @@
+@keyframes grow-circle {
+    0% {
+        transform: scale(0) rotate(300deg);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1) rotate(360deg);
+        opacity: 1;
+    }
+}
+
+.animate-grow-circle {
+    animation: grow-circle 0.2s ease-in-out forwards;
+    /* Tăng thời gian hoạt động để rõ hơn */
+}
+
+@keyframes pop-out {
+    0% {
+        transform: translateY(0);
+        box-shadow: none;
+    }
+
+    100% {
+        transform: translateY(-5px);
+        /* Move the card up slightly */
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.animate-pop-out {
+    animation: pop-out 0.2s ease-in-out forwards;
+}
+
+.custom-hover-button:hover .anticon {
+    color: #33CCFF;
+}
